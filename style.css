@@ -323,3 +323,81 @@ footer ul li a {
     text-decoration: none;
     color: rgb(57, 60, 65);
 }
+
+/* ------------ */
+/*  Responsive  */
+/* ------------ */
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+    .tesla-logo {
+        padding-left: 16px;
+        width: 100px;
+    }
+    .menu-items {
+        padding-right: 16px;
+    }
+
+    header,
+    header video {
+        height: 60vh;
+    }
+    .content-overlay {
+        padding: 24px 16px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .sub-heading {
+        font-size: 16px;
+    }
+    .action-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .action-btns button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .arrow-btns {
+        left: 0;
+        right: 0;
+        padding: 0 12px;
+    }
+    .arrow-btns button {
+        margin: 0;
+    }
+
+    .car-cards-container {
+        height: auto;
+        min-height: 400px;
+        margin-top: 24px;
+    }
+    .car-cards-carousel {
+        grid-auto-columns: min(100%, 400px);
+        padding-left: 16px;
+        gap: 16px;
+    }
+    .car-card {
+        width: min(100%, 400px);
+        height: 380px;
+    }
+    .car-card .card-header,
+    .car-card .card-footer {
+        padding: 20px;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px;
+        font-size: 11px;
+    }
+    footer ul li {
+        margin-right: 0;
+    }
+}
