@@ -302,6 +302,15 @@ h1 {
     gap: 24px;
     overflow-x: scroll;
     padding: 0px 0px 0px 48px;
+    scrollbar-gutter: stable;
+}
+/* Make the scrollabr visible with CSS */
+.car-cards-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+.car-cards-carousel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
 .car-card {
